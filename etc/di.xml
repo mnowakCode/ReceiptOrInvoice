@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Mano\ReceiptInvoiceButton\Api\Data\ReceiptOrInvoiceInterface"
-                type="Mano\ReceiptInvoiceButton\Model\ReceiptOrInvoice"/>
-    <preference for="Mano\ReceiptInvoiceButton\Api\ReceiptOrInvoiceRepositoryInterface"
-                type="Mano\ReceiptInvoiceButton\Service\ReceiptOrInvoiceRepository"/>
+    <preference for="MNowakCode\ReceiptInvoiceButton\Api\Data\ReceiptOrInvoiceInterface"
+                type="MNowakCode\ReceiptInvoiceButton\Model\ReceiptOrInvoice"/>
+    <preference for="MNowakCode\ReceiptInvoiceButton\Api\ReceiptOrInvoiceRepositoryInterface"
+                type="MNowakCode\ReceiptInvoiceButton\Service\ReceiptOrInvoiceRepository"/>
 </config>

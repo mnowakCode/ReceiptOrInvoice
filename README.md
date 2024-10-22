@@ -1,8 +1,8 @@
-# Receipt Invoice Button - module from Mano
+# Receipt Invoice Button - module from mnowakCode
 
 Description
 -----------
-Mano_ReceiptInvoiceButton module was created to show a button that adds the possibility choose a receipt or invoice in the checkout process.
+MNowakCode_ReceiptInvoiceButton module was created to show a button that adds the possibility choose a receipt or invoice in the checkout process.
 
 Compatibility
 -------------
@@ -14,7 +14,7 @@ Installation Instructions
 -------------------------
 Install using composer by adding to your composer file using commands:
 ```
-$ composer require mano/module-receipt-invoice-button
+$ composer require mnowakCode/module-receipt-invoice-button
 $ composer update
 $ bin/magento setup:upgrade
 ```

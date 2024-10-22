@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Mano\ReceiptInvoiceButton\Model;
+namespace MNowakCode\ReceiptInvoiceButton\Model;
 
-use Mano\ReceiptInvoiceButton\Api\Data\ReceiptOrInvoiceInterface;
-use Mano\ReceiptInvoiceButton\Model\ResourceModel\ReceiptOrInvoice as ResourceModel;
+use MNowakCode\ReceiptInvoiceButton\Api\Data\ReceiptOrInvoiceInterface;
+use MNowakCode\ReceiptInvoiceButton\Model\ResourceModel\ReceiptOrInvoice as ResourceModel;
 use Magento\Framework\Model\AbstractModel;
 
 class ReceiptOrInvoice extends AbstractModel implements ReceiptOrInvoiceInterface
@@ -13,7 +13,7 @@ class ReceiptOrInvoice extends AbstractModel implements ReceiptOrInvoiceInterfac
     /**
      * @var string
      */
-    protected $_eventPrefix = 'mano_receipt_or_invoice_model';
+    protected $_eventPrefix = 'MNowakCode_receipt_or_invoice_model';
 
     /**
      * Initialize magento model.

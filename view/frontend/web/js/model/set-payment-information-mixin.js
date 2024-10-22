@@ -1,7 +1,7 @@
 define([
     'jquery',
     'mage/utils/wrapper',
-    'Mano_ReceiptInvoiceButton/js/model/assigner'
+    'MNowakCode_ReceiptInvoiceButton/js/model/assigner'
 ], function ($, wrapper, assigner) {
     'use strict';
 

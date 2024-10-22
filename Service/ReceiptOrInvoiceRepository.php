@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Mano\ReceiptInvoiceButton\Service;
+namespace MNowakCode\ReceiptInvoiceButton\Service;
 
-use Mano\ReceiptInvoiceButton\Api\Data\ReceiptOrInvoiceInterface;
-use Mano\ReceiptInvoiceButton\Api\ReceiptOrInvoiceRepositoryInterface;
-use Mano\ReceiptInvoiceButton\Model\ResourceModel\ReceiptOrInvoice;
+use MNowakCode\ReceiptInvoiceButton\Api\Data\ReceiptOrInvoiceInterface;
+use MNowakCode\ReceiptInvoiceButton\Api\ReceiptOrInvoiceRepositoryInterface;
+use MNowakCode\ReceiptInvoiceButton\Model\ResourceModel\ReceiptOrInvoice;
 use Exception;
 use Magento\Framework\Exception\CouldNotSaveException;
 

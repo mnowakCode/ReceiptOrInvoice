@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Mano\ReceiptInvoiceButton\Observer;
+namespace MNowakCode\ReceiptInvoiceButton\Observer;
 
-use Mano\ReceiptInvoiceButton\Api\ReceiptOrInvoiceRepositoryInterface;
-use Mano\ReceiptInvoiceButton\Api\Data\ReceiptOrInvoiceInterfaceFactory;
+use MNowakCode\ReceiptInvoiceButton\Api\ReceiptOrInvoiceRepositoryInterface;
+use MNowakCode\ReceiptInvoiceButton\Api\Data\ReceiptOrInvoiceInterfaceFactory;
 use Magento\Framework\Exception\CouldNotSaveException;
 use Magento\Framework\Webapi\Rest\Request;
 use Magento\Framework\Event\ObserverInterface;

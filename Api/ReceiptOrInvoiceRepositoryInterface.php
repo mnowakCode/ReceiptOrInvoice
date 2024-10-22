@@ -1,8 +1,8 @@
 <?php
 
-namespace Mano\ReceiptInvoiceButton\Api;
+namespace MNowakCode\ReceiptInvoiceButton\Api;
 
-use Mano\ReceiptInvoiceButton\Api\Data\ReceiptOrInvoiceInterface;
+use MNowakCode\ReceiptInvoiceButton\Api\Data\ReceiptOrInvoiceInterface;
 
 interface ReceiptOrInvoiceRepositoryInterface
 {

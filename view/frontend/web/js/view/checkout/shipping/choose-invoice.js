@@ -6,7 +6,7 @@ define([
     'use strict';
     return Component.extend({
         defaults: {
-            template: 'Mano_ReceiptInvoiceButton/checkout/shipping/choose_invoice'
+            template: 'MNowakCode_ReceiptInvoiceButton/checkout/shipping/choose_invoice'
         }
     });
 });
