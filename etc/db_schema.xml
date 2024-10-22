@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="sales_order_document_type" resource="default" engine="innodb" comment="Document types for order(invoice/receipt)">
+        <column xsi:type="int" name="entity_id" unsigned="true" nullable="false" identity="true" comment="Entity ID"/>
+        <column xsi:type="int" name="parent_id" unsigned="true" nullable="false" comment="Parent ID"/>
+        <column xsi:type="smallint" name="is_invoice" default="null" comment="0-receipt 1-invoice"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+        <column name="entity_id"/>
+    </constraint>
+    <constraint xsi:type="foreign" referenceId="SALE_ORDER_DOCUMENT_TYPE_PARENT_ID_PARENT_ID_SALES_ORDER_ENTITY_ID"
+        table="sales_order_document_type" column="parent_id" referenceTable="sales_order" referenceColumn="entity_id"
+        onDelete="CASCADE"/>
+    </table>
+</schema>

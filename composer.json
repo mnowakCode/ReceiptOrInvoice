@@ -1,0 +1,20 @@
+{
+    "name": "mano/module-receipt-invoice-button",
+    "version": "1.0.0",
+    "description": "Module to show a button that adds the possibility choose a receipt or invoice in the checkout process",
+    "type": "magento2-module",
+    "require": {
+        "magento/framework": "*"
+    },
+    "license": [
+        "Proprietary"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Mano\\ReceiptInvoiceButton\\": ""
+        }
+    }
+}
