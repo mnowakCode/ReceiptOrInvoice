@@ -14,10 +14,14 @@ Installation Instructions
 -------------------------
 Install using composer by adding to your composer file using commands:
 ```
-$ composer require m-nowak-code/module-receipt-invoice-button/module-receipt-invoice-button
+$ composer require m-nowak-code/module-receipt-invoice-button
 $ composer update
 $ bin/magento setup:upgrade
 ```
+
+REST API
+--------
+To use REST API to get data about which document the client chosen, use this endpoint ```/V1/order/document/:orderId```
 
 Contribution
 ------------

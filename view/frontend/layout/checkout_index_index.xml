@@ -18,7 +18,7 @@
                                                             <item name="children" xsi:type="array">
                                                                 <item name="choose_invoice" xsi:type="array">
                                                                     <item name="component" xsi:type="string">
-                                                                        mnowakCode_ReceiptInvoiceButton/js/view/checkout/shipping/choose-invoice
+                                                                        MNowakCode_ReceiptInvoiceButton/js/view/checkout/shipping/choose-invoice
                                                                     </item>
                                                                 </item>
                                                             </item>

@@ -81,6 +81,8 @@ class SaveChooseReceiptOrInvoiceObserver implements ObserverInterface
     }
 
     /**
+     * Ger value from request
+     *
      * @return false|string
      */
     private function getValueFromRequest()
