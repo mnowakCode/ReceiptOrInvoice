@@ -19,59 +19,28 @@ class ReceiptOrInvoiceRepository implements ReceiptOrInvoiceRepositoryInterface
      */
     private ReceiptOrInvoice $receiptOrInvoiceResource;
 
-    /**
-     * @var CollectionFactory
-     */
-    private CollectionFactory $collectionFactory;
 
     /**
      * @param ReceiptOrInvoice $receiptOrInvoiceResource
-     * @param CollectionFactory $collectionFactory
      */
-    public function __construct(ReceiptOrInvoice $receiptOrInvoiceResource, CollectionFactory $collectionFactory)
+    public function __construct(ReceiptOrInvoice $receiptOrInvoiceResource)
     {
         $this->receiptOrInvoiceResource = $receiptOrInvoiceResource;
-        $this->collectionFactory = $collectionFactory;
     }
 
     /**
      * @inheritdoc
+     *
      * @throws CouldNotSaveException
      */
     public function save(ReceiptOrInvoiceInterface $receiptOrInvoice): ReceiptOrInvoiceInterface
     {
-        {
-            try {
-                $this->receiptOrInvoiceResource->save($receiptOrInvoice);
-            } catch (Exception $e) {
-                throw new CouldNotSaveException(__('Could not save the data about invoice.'), $e);
-            }
-            return $receiptOrInvoice;
-        }
-    }
-
-    /**
-     * @inheritdoc
-     * @throws NoSuchEntityException
-     */
-    public function getDocumentByOrderId($orderId): array
-    {
-        $collection = $this->collectionFactory->create();
-        $collection->addFieldToFilter('parent_id', $orderId);
-
-        if ($collection->getSize() == 0) {
-            throw new NoSuchEntityException(__('No documents found for Order ID %1', $orderId));
+        try {
+            $this->receiptOrInvoiceResource->save($receiptOrInvoice);
+        } catch (Exception $e) {
+            throw new CouldNotSaveException(__('Could not save the data about invoice.'), $e);
         }
 
-        $documents = [];
-        foreach ($collection as $item) {
-            $documents[] = [
-                'entity_id' => $item->getEntityId(),
-                'parent_id' => $item->getParentId(),
-                'is_invoice' => $item->getIsInvoice()
-            ];
-        }
-
-        return $documents;
+        return $receiptOrInvoice;
     }
 }

@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace MNowakCode\ReceiptInvoiceButton\Test\Unit\Observer;
+
 use MNowakCode\ReceiptInvoiceButton\Observer\SaveChooseReceiptOrInvoiceObserver;
 use MNowakCode\ReceiptInvoiceButton\Api\ReceiptOrInvoiceRepositoryInterface;
 use MNowakCode\ReceiptInvoiceButton\Api\Data\ReceiptOrInvoiceInterface;
@@ -86,8 +88,6 @@ class SaveChooseReceiptOrInvoiceObserverTest extends TestCase
 
         $receiptOrInvoiceMock->expects($this->once())->method('setParentId')->with($orderId);
         $receiptOrInvoiceMock->expects($this->once())->method('setInvoice')->with(1);
-
-
 
         $this->receiptOrInvoiceRepositoryMock->expects($this->once())
             ->method('save')

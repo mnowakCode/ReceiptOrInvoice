@@ -1,0 +1,13 @@
+{
+    "sales_order_document_type": {
+        "column": {
+            "entity_id": true,
+            "parent_id": true,
+            "is_invoice": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "SALES_ORDER_DOCUMENT_TYPE_PARENT_ID_SALES_ORDER_ENTITY_ID": true
+        }
+    }
+}

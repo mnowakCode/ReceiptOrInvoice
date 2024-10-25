@@ -19,10 +19,6 @@ $ composer update
 $ bin/magento setup:upgrade
 ```
 
-REST API
---------
-To use REST API to get data about which document the client chosen, use this endpoint ```/V1/order/document/:orderId```
-
 Contribution
 ------------
 Any contribution is highly appreciated. The best way to contribute code is to open a [pull request on GitHub](https://help.github.com/articles/using-pull-requests).
